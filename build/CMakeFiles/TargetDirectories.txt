@@ -1,3 +1,0 @@
-D:/code/C_C++Project/DataMining/build/CMakeFiles/main.dir
-D:/code/C_C++Project/DataMining/build/CMakeFiles/edit_cache.dir
-D:/code/C_C++Project/DataMining/build/CMakeFiles/rebuild_cache.dir
