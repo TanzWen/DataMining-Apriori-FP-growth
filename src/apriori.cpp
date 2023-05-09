@@ -46,7 +46,7 @@ bool apriori::comp_set(const item &a, const item &b)
         for (auto &i : l)
         {
             vector<string> v;
-            for (string j : i.first.s)
+            for(auto &j:i.first.s)
             {
                 v.push_back(j);
             }
@@ -180,14 +180,14 @@ apriori::apriori(string file) : file_name(file), k(0)
     remove("data/apriori_output.txt");
     output.open("data/apriori_output.txt", ios::out);
     this->file.open(file, ios::in);
-    run();
+    // run();
 }
 apriori::apriori(string file, double supp, double con) : file_name(file), sup(supp), conf(con), k(0)
 {
     remove("./data/apriori_output.txt");
     output.open("./data/apriori_output.txt", ios::out);
     this->file.open(file, ios::in);
-    run();
+    // run();
 }
 apriori::~apriori()
 {

@@ -8,7 +8,7 @@ fp_growth::fp_growth(string file_name, double supp, double con) : m(0), lines(0)
     file.open(this->file_name, ios::in);
     // root = new node();
     // table = new node();
-    run();
+    // run();
 }
 fp_growth::~fp_growth()
 {
@@ -116,8 +116,10 @@ void fp_growth::run()
         lines++;
         stringstream ss(str);
         string s;
-        while (ss >> s)
+        while(ss>>s)
+        {
             map[s]++;
+        }
     }
     file.clear();
     file.seekg(0); // 将文件指针回到开头
